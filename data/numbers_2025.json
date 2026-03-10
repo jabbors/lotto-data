@@ -1,0 +1,165 @@
+{
+  "average": 10,
+  "distribution": [
+    {
+      "number": 23,
+      "frequency": 15
+    },
+    {
+      "number": 39,
+      "frequency": 15
+    },
+    {
+      "number": 2,
+      "frequency": 13
+    },
+    {
+      "number": 12,
+      "frequency": 13
+    },
+    {
+      "number": 13,
+      "frequency": 13
+    },
+    {
+      "number": 14,
+      "frequency": 13
+    },
+    {
+      "number": 30,
+      "frequency": 13
+    },
+    {
+      "number": 38,
+      "frequency": 13
+    },
+    {
+      "number": 1,
+      "frequency": 12
+    },
+    {
+      "number": 3,
+      "frequency": 12
+    },
+    {
+      "number": 11,
+      "frequency": 12
+    },
+    {
+      "number": 25,
+      "frequency": 12
+    },
+    {
+      "number": 29,
+      "frequency": 12
+    },
+    {
+      "number": 7,
+      "frequency": 11
+    },
+    {
+      "number": 8,
+      "frequency": 11
+    },
+    {
+      "number": 15,
+      "frequency": 11
+    },
+    {
+      "number": 18,
+      "frequency": 11
+    },
+    {
+      "number": 21,
+      "frequency": 11
+    },
+    {
+      "number": 26,
+      "frequency": 11
+    },
+    {
+      "number": 27,
+      "frequency": 11
+    },
+    {
+      "number": 33,
+      "frequency": 11
+    },
+    {
+      "number": 34,
+      "frequency": 11
+    },
+    {
+      "number": 40,
+      "frequency": 11
+    },
+    {
+      "number": 5,
+      "frequency": 10
+    },
+    {
+      "number": 19,
+      "frequency": 10
+    },
+    {
+      "number": 36,
+      "frequency": 10
+    },
+    {
+      "number": 9,
+      "frequency": 9
+    },
+    {
+      "number": 10,
+      "frequency": 9
+    },
+    {
+      "number": 20,
+      "frequency": 9
+    },
+    {
+      "number": 28,
+      "frequency": 9
+    },
+    {
+      "number": 37,
+      "frequency": 9
+    },
+    {
+      "number": 4,
+      "frequency": 8
+    },
+    {
+      "number": 6,
+      "frequency": 8
+    },
+    {
+      "number": 24,
+      "frequency": 8
+    },
+    {
+      "number": 31,
+      "frequency": 8
+    },
+    {
+      "number": 22,
+      "frequency": 7
+    },
+    {
+      "number": 32,
+      "frequency": 7
+    },
+    {
+      "number": 35,
+      "frequency": 7
+    },
+    {
+      "number": 16,
+      "frequency": 6
+    },
+    {
+      "number": 17,
+      "frequency": 4
+    }
+  ]
+}
