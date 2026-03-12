@@ -267,58 +267,73 @@ SELECT json_object(
 
 # Data for top10
 sqlite3 ${database} \
-"SELECT json_object(
-    'length7', (
-        SELECT json_group_array(
-            json_object('numbers', numbers, 'frequency', frequency)
-        )
-        FROM (
-            SELECT json_array(n1,n2,n3,n4,n5,n6,n7) AS numbers, frequency
-            FROM lotto_combinations
-            WHERE size=7 AND frequency > 1 ORDER BY frequency DESC LIMIT 10
-        )
-    ),
-    'length6', (
-        SELECT json_group_array(
-            json_object('numbers', numbers, 'frequency', frequency)
-        )
-        FROM (
-            SELECT json_array(n1,n2,n3,n4,n5,n6) AS numbers, frequency
-            FROM lotto_combinations
-            WHERE size=6 ORDER BY frequency DESC LIMIT 10
+"SELECT json_array(
+    json_object(
+        'length', 7,
+        'combinations', (
+            SELECT json_group_array(
+                json_object('numbers', numbers, 'frequency', frequency)
+            )
+            FROM (
+                SELECT json_array(n1,n2,n3,n4,n5,n6,n7) AS numbers, frequency
+                FROM lotto_combinations
+                WHERE size=7 AND frequency > 1 ORDER BY frequency DESC LIMIT 10
+            )
         )
     ),
-    'length5', (
-        SELECT json_group_array(
-            json_object('numbers', numbers, 'frequency', frequency)
-        )
-        FROM (
-            SELECT json_array(n1,n2,n3,n4,n5) AS numbers, frequency
-            FROM lotto_combinations
-            WHERE size=5 ORDER BY frequency DESC LIMIT 10
-        )
-    ),
-    'length4', (
-        SELECT json_group_array(
-            json_object('numbers', numbers, 'frequency', frequency)
-        )
-        FROM (
-            SELECT json_array(n1,n2,n3,n4) AS numbers, frequency
-            FROM lotto_combinations
-            WHERE size=4 ORDER BY frequency DESC LIMIT 10
+    json_object(
+        'length', 6,
+        'combinations', (
+            SELECT json_group_array(
+                json_object('numbers', numbers, 'frequency', frequency)
+            )
+            FROM (
+                SELECT json_array(n1,n2,n3,n4,n5,n6) AS numbers, frequency
+                FROM lotto_combinations
+                WHERE size=6 AND frequency > 1 ORDER BY frequency DESC LIMIT 10
+            )
         )
     ),
-    'length3', (
-        SELECT json_group_array(
-            json_object('numbers', numbers, 'frequency', frequency)
+    json_object(
+        'length', 5,
+        'combinations', (
+            SELECT json_group_array(
+                json_object('numbers', numbers, 'frequency', frequency)
+            )
+            FROM (
+                SELECT json_array(n1,n2,n3,n4,n5) AS numbers, frequency
+                FROM lotto_combinations
+                WHERE size=5 AND frequency > 1 ORDER BY frequency DESC LIMIT 10
+            )
         )
-        FROM (
-            SELECT json_array(n1,n2,n3) AS numbers, frequency
-            FROM lotto_combinations
-            WHERE size=3 ORDER BY frequency DESC LIMIT 10
+    ),
+    json_object(
+        'length', 4,
+        'combinations', (
+            SELECT json_group_array(
+                json_object('numbers', numbers, 'frequency', frequency)
+            )
+            FROM (
+                SELECT json_array(n1,n2,n3,n4) AS numbers, frequency
+                FROM lotto_combinations
+                WHERE size=4 AND frequency > 1 ORDER BY frequency DESC LIMIT 10
+            )
+        )
+    ),
+    json_object(
+        'length', 3,
+        'combinations', (
+            SELECT json_group_array(
+                json_object('numbers', numbers, 'frequency', frequency)
+            )
+            FROM (
+                SELECT json_array(n1,n2,n3) AS numbers, frequency
+                FROM lotto_combinations
+                WHERE size=3 AND frequency > 1 ORDER BY frequency DESC LIMIT 10
+            )
         )
     )
-)" | jq 'with_entries(.value |= map(.numbers |= fromjson))' > data/combinations_top10.json
+)" | jq 'map(.combinations |= map(.numbers |= fromjson))' > data/combinations_top10.json
 
 # Data for stats view
 sqlite3 ${database} \
