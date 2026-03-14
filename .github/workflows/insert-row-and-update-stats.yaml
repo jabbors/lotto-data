@@ -1,0 +1,28 @@
+name: Update rates
+on:
+  schedule:
+    - cron: 31 21 * * 6,7
+  workflow_dispatch:
+jobs:
+  update-euribor-rates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Build dpocker image
+        run: docker build -t importer .
+      - name: Insert row and update stats
+        run: docker run --rm -v ${PWD}/lotto.db:/importer/lotto.db importer python /importer/insert_and_update.py cron
+        env:
+          PUSHOVER_APP_TOKEN: ${{ secrets.PUSHOVER_APP_TOKEN }}
+          PUSHOVER_USER_KEY: ${{ secrets.PUSHOVER_USER_KEY }}
+      - name: Serialize data
+        run: docker run --rm -v ${PWD}/mnt:/mnt --entrypoint /bin/sh importer serialize-data.sh
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
