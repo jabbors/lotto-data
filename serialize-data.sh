@@ -1,7 +1,9 @@
-#!/bin/bash
+#!/bin/sh
 
 year=$(date '+%Y')
 database=data/lotto.db
+
+echo "Serializing data ..."
 
 # Data for home view
 sqlite3 ${database} \
@@ -475,3 +477,6 @@ sqlite3 ${database} \
         )
     )
 )" | jq '.rounds |= map(.winnings |= fromjson)' > "data/generated_stats_${year}.json"
+
+echo "Serialization completed"
+

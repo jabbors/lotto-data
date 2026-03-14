@@ -1,5 +1,7 @@
 FROM python:3.11-alpine3.21
 
+RUN apk update && apk add --no-cache sqlite jq
+
 # Install dependencies
 RUN pip install --upgrade pip && pip install beautifulsoup4==4.12.3
 
