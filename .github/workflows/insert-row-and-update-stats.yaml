@@ -20,7 +20,7 @@ jobs:
           PUSHOVER_APP_TOKEN: ${{ secrets.PUSHOVER_APP_TOKEN }}
           PUSHOVER_USER_KEY: ${{ secrets.PUSHOVER_USER_KEY }}
       - name: Serialize data
-        run: docker run --rm -v ${PWD}/mnt:/mnt -w /mnt --entrypoint /bin/sh importer serialize-data.sh
+        run: docker run --rm -v ${PWD}:/mnt -w /mnt --entrypoint /bin/sh importer serialize-data.sh
       - name: Commit & Push changes
         uses: actions-js/push@master
         with:
