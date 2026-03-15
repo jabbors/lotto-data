@@ -1,0 +1,22 @@
+{
+  "lessThanEqual": {
+    "total": 361,
+    "percentage": 17.31
+  },
+  "greaterThan": {
+    "total": 1724,
+    "percentage": 82.69
+  },
+  "evenNumbers": {
+    "total": 8,
+    "percentage": 0.38
+  },
+  "oddNumbers": {
+    "total": 16,
+    "percentage": 0.77
+  },
+  "mixedNumber": {
+    "total": 2061,
+    "percentage": 98.85
+  }
+}

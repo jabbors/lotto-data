@@ -367,8 +367,71 @@ sqlite3 ${database} \
                 FROM lotto_numbers
             )
         )
+    ),
+    'evenNumbers', json_object(
+        'total', (
+            SELECT SUM(
+                (n1 % 2 = 0) AND (n2 % 2 = 0) AND (n3 % 2 = 0) AND
+                (n4 % 2 = 0) AND (n5 % 2 = 0) AND (n6 % 2 = 0) AND (n7 % 2 = 0)
+            )
+            FROM lotto_numbers
+        ),
+        'percentage', (
+            SELECT ROUND(
+                100.0 * SUM(
+                    (n1 % 2 = 0) AND (n2 % 2 = 0) AND (n3 % 2 = 0) AND
+                    (n4 % 2 = 0) AND (n5 % 2 = 0) AND (n6 % 2 = 0) AND (n7 % 2 = 0)
+                ) / COUNT(*), 2
+            )
+            FROM lotto_numbers
+        )
+    ),
+    'oddNumbers', json_object(
+        'total', (
+            SELECT SUM(
+                (n1 % 2 = 1) AND (n2 % 2 = 1) AND (n3 % 2 = 1) AND
+                (n4 % 2 = 1) AND (n5 % 2 = 1) AND (n6 % 2 = 1) AND (n7 % 2 = 1)
+            )
+            FROM lotto_numbers
+        ),
+        'percentage', (
+            SELECT ROUND(
+                100.0 * SUM(
+                    (n1 % 2 = 1) AND (n2 % 2 = 1) AND (n3 % 2 = 1) AND
+                    (n4 % 2 = 1) AND (n5 % 2 = 1) AND (n6 % 2 = 1) AND (n7 % 2 = 1)
+                ) / COUNT(*), 2
+            )
+            FROM lotto_numbers
+        )
+    ),
+    'mixedNumbers', json_object(
+        'total', (
+            SELECT
+                COUNT(*) - SUM(
+                    (n1 % 2 = 0) AND (n2 % 2 = 0) AND (n3 % 2 = 0) AND
+                    (n4 % 2 = 0) AND (n5 % 2 = 0) AND (n6 % 2 = 0) AND (n7 % 2 = 0)
+                ) - SUM(
+                    (n1 % 2 = 1) AND (n2 % 2 = 1) AND (n3 % 2 = 1) AND
+                    (n4 % 2 = 1) AND (n5 % 2 = 1) AND (n6 % 2 = 1) AND (n7 % 2 = 1)
+                )
+            FROM lotto_numbers
+        ),
+        'percentage', (
+            SELECT ROUND(
+                100.0 * (
+                    COUNT(*) - SUM(
+                        (n1 % 2 = 0) AND (n2 % 2 = 0) AND (n3 % 2 = 0) AND
+                        (n4 % 2 = 0) AND (n5 % 2 = 0) AND (n6 % 2 = 0) AND (n7 % 2 = 0)
+                    ) - SUM(
+                        (n1 % 2 = 1) AND (n2 % 2 = 1) AND (n3 % 2 = 1) AND
+                        (n4 % 2 = 1) AND (n5 % 2 = 1) AND (n6 % 2 = 1) AND (n7 % 2 = 1)
+                    )
+                ) / COUNT(*), 2
+            )
+            FROM lotto_numbers
+        )
     )
-)" | jq > data/daterows_stats.json
+)" | jq > data/rows_stats.json
 
 sqlite3 ${database} \
 "SELECT json_array(
