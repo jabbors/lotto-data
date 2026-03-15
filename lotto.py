@@ -6,6 +6,7 @@ import http.client, urllib
 
 class lotto:
     def __init__(self):
+        self.conn = None
         self.databaseValid = False
         db = os.path.dirname(os.path.realpath(__file__))+'/lotto.db'
         if os.path.isfile(db):
@@ -15,9 +16,10 @@ class lotto:
                 self.databaseValid = True
 
     def __del__(self):
-        self.conn.commit()
-        self.cursor.close()
-        self.conn.close()
+        if self.conn:
+            self.conn.commit()
+            self.cursor.close()
+            self.conn.close()
 
     def checkDatabaseTables(self):
         if self.tableExists('lotto_numbers') == False:
