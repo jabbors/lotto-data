@@ -27,18 +27,18 @@
     },
     {
       "number": 14,
-      "frequency": 515
+      "frequency": 516
     },
     {
       "number": 7,
       "frequency": 514
     },
     {
-      "number": 19,
-      "frequency": 511
+      "number": 36,
+      "frequency": 512
     },
     {
-      "number": 36,
+      "number": 19,
       "frequency": 511
     },
     {
@@ -82,16 +82,16 @@
       "frequency": 497
     },
     {
+      "number": 4,
+      "frequency": 496
+    },
+    {
       "number": 26,
       "frequency": 496
     },
     {
-      "number": 4,
-      "frequency": 495
-    },
-    {
       "number": 11,
-      "frequency": 491
+      "frequency": 492
     },
     {
       "number": 13,
@@ -118,20 +118,20 @@
       "frequency": 486
     },
     {
+      "number": 18,
+      "frequency": 484
+    },
+    {
       "number": 38,
       "frequency": 484
     },
     {
-      "number": 18,
-      "frequency": 483
+      "number": 32,
+      "frequency": 478
     },
     {
       "number": 35,
       "frequency": 478
-    },
-    {
-      "number": 32,
-      "frequency": 477
     },
     {
       "number": 39,
@@ -143,7 +143,7 @@
     },
     {
       "number": 31,
-      "frequency": 473
+      "frequency": 474
     },
     {
       "number": 8,
@@ -159,7 +159,7 @@
     },
     {
       "number": 40,
-      "frequency": 101
+      "frequency": 102
     }
   ]
 }
