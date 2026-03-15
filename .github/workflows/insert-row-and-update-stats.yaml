@@ -15,7 +15,7 @@ jobs:
       - name: Build dpocker image
         run: docker build -t importer .
       - name: Insert row and update stats
-        run: docker run --rm -v ${PWD}/lotto.db:/importer/lotto.db importer python /importer/insert_and_update.py cron
+        run: docker run --rm -v ${PWD}/data/lotto.db:/importer/lotto.db importer python /importer/insert_and_update.py cron
         env:
           PUSHOVER_APP_TOKEN: ${{ secrets.PUSHOVER_APP_TOKEN }}
           PUSHOVER_USER_KEY: ${{ secrets.PUSHOVER_USER_KEY }}
