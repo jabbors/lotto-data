@@ -307,15 +307,38 @@ class lotto:
             return False
         return True
 
-    def randomNumbers(self):
-        """ returns a list containg 7 unique random numbers between 1 and 40 """
-        numbers = []
-        while len(numbers) < 7:
-            n = random.randint(1, 40)
-            if n not in numbers:
-                numbers.append(n)
-        numbers.sort()
-        return numbers
+    def onlyEvenNumbers(self, numbers):
+        """ returns true if all numbers are even """
+        l = [n for n in numbers if n % 2 == 0]
+        if len(l) != len(numbers):
+            return False
+        return True
+
+    def onlyOddNumbers(self, numbers):
+        """ returns true if all numbers are odd """
+        l = [n for n in numbers if n % 2 == 1]
+        if len(l) != len(numbers):
+            return False
+        return True
+
+    def generateRow(self):
+        """ returns a sorted list containg 7 unique random numbers between 1 and 40 of mixed parity where at least one number is greater that 31 """
+        rows = []
+        while len(rows) < 1:
+            numbers = []
+            while len(numbers) < 7:
+                n = random.randint(1, 40)
+                if n not in numbers:
+                    numbers.append(n)
+            if self.onlyDates(numbers):
+                continue
+            if self.onlyEvenNumbers(numbers):
+                continue
+            if self.onlyOddNumbers(numbers):
+                continue
+            numbers.sort()
+            rows.append(numbers)
+        return rows[0]
 
     def generateRows(self):
         print('Info: generating new rows...')
@@ -333,9 +356,9 @@ class lotto:
         rows = []
         printed = False
         while len(rows) < 1000:
-            numbers = self.randomNumbers()
-            if not self.isWinning(numbers, results) and not self.inGenerated(numbers, rows) and not self.onlyDates(numbers):
-                rows.append(numbers)
+            row = self.generateRow()
+            if not self.isWinning(row, results) and not self.inGenerated(row, rows):
+                rows.append(row)
                 printed = False
             if len(rows) > 0 and len(rows) % 100 == 0:
                 if not printed:
