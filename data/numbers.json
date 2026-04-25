@@ -39,7 +39,7 @@
     },
     {
       "number": 12,
-      "frequency": 511
+      "frequency": 512
     },
     {
       "number": 19,
@@ -70,12 +70,12 @@
       "frequency": 501
     },
     {
-      "number": 5,
+      "number": 4,
       "frequency": 499
     },
     {
-      "number": 4,
-      "frequency": 498
+      "number": 5,
+      "frequency": 499
     },
     {
       "number": 2,
@@ -87,15 +87,15 @@
     },
     {
       "number": 26,
-      "frequency": 496
+      "frequency": 497
     },
     {
       "number": 11,
-      "frequency": 493
+      "frequency": 494
     },
     {
       "number": 13,
-      "frequency": 493
+      "frequency": 494
     },
     {
       "number": 33,
@@ -103,6 +103,10 @@
     },
     {
       "number": 15,
+      "frequency": 490
+    },
+    {
+      "number": 21,
       "frequency": 490
     },
     {
@@ -114,10 +118,6 @@
       "frequency": 490
     },
     {
-      "number": 21,
-      "frequency": 489
-    },
-    {
       "number": 38,
       "frequency": 485
     },
@@ -126,11 +126,11 @@
       "frequency": 484
     },
     {
-      "number": 32,
-      "frequency": 478
+      "number": 35,
+      "frequency": 479
     },
     {
-      "number": 35,
+      "number": 32,
       "frequency": 478
     },
     {
@@ -139,7 +139,7 @@
     },
     {
       "number": 24,
-      "frequency": 476
+      "frequency": 477
     },
     {
       "number": 31,
