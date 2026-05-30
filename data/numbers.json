@@ -3,7 +3,7 @@
   "distribution": [
     {
       "number": 6,
-      "frequency": 535
+      "frequency": 536
     },
     {
       "number": 16,
@@ -11,7 +11,7 @@
     },
     {
       "number": 3,
-      "frequency": 532
+      "frequency": 533
     },
     {
       "number": 9,
@@ -55,11 +55,11 @@
     },
     {
       "number": 10,
-      "frequency": 503
+      "frequency": 504
     },
     {
       "number": 25,
-      "frequency": 503
+      "frequency": 504
     },
     {
       "number": 27,
@@ -91,7 +91,7 @@
     },
     {
       "number": 11,
-      "frequency": 495
+      "frequency": 496
     },
     {
       "number": 13,
@@ -103,7 +103,7 @@
     },
     {
       "number": 30,
-      "frequency": 492
+      "frequency": 493
     },
     {
       "number": 22,
@@ -119,7 +119,7 @@
     },
     {
       "number": 18,
-      "frequency": 486
+      "frequency": 487
     },
     {
       "number": 38,
@@ -159,7 +159,7 @@
     },
     {
       "number": 40,
-      "frequency": 102
+      "frequency": 103
     }
   ]
 }
