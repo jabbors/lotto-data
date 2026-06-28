@@ -2,31 +2,31 @@
   {
     "length": 7,
     "unique": 18643560,
-    "drawn": 2099,
+    "drawn": 2100,
     "percentage": 0.01
   },
   {
     "length": 6,
     "unique": 3838380,
-    "drawn": 14660,
+    "drawn": 14667,
     "percentage": 0.38
   },
   {
     "length": 5,
     "unique": 658008,
-    "drawn": 42493,
+    "drawn": 42513,
     "percentage": 6.46
   },
   {
     "length": 4,
     "unique": 91390,
-    "drawn": 49546,
-    "percentage": 54.21
+    "drawn": 49567,
+    "percentage": 54.24
   },
   {
     "length": 3,
     "unique": 9880,
-    "drawn": 9746,
-    "percentage": 98.64
+    "drawn": 9747,
+    "percentage": 98.65
   }
 ]

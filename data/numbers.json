@@ -7,7 +7,7 @@
     },
     {
       "number": 16,
-      "frequency": 536
+      "frequency": 537
     },
     {
       "number": 3,
@@ -27,7 +27,7 @@
     },
     {
       "number": 14,
-      "frequency": 517
+      "frequency": 518
     },
     {
       "number": 7,
@@ -51,11 +51,11 @@
     },
     {
       "number": 28,
-      "frequency": 506
+      "frequency": 507
     },
     {
       "number": 25,
-      "frequency": 505
+      "frequency": 506
     },
     {
       "number": 10,
@@ -63,6 +63,10 @@
     },
     {
       "number": 27,
+      "frequency": 502
+    },
+    {
+      "number": 34,
       "frequency": 502
     },
     {
@@ -78,10 +82,6 @@
       "frequency": 501
     },
     {
-      "number": 34,
-      "frequency": 501
-    },
-    {
       "number": 2,
       "frequency": 499
     },
@@ -91,7 +91,7 @@
     },
     {
       "number": 11,
-      "frequency": 496
+      "frequency": 497
     },
     {
       "number": 13,
@@ -127,7 +127,7 @@
     },
     {
       "number": 24,
-      "frequency": 479
+      "frequency": 480
     },
     {
       "number": 32,
@@ -159,7 +159,7 @@
     },
     {
       "number": 40,
-      "frequency": 104
+      "frequency": 105
     }
   ]
 }
