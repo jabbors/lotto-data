@@ -1,11 +1,11 @@
 {
   "lessThanEqual": {
     "total": 365,
-    "percentage": 17.34
+    "percentage": 17.33
   },
   "greaterThan": {
-    "total": 1740,
-    "percentage": 82.66
+    "total": 1741,
+    "percentage": 82.67
   },
   "evenNumbers": {
     "total": 8,
@@ -16,7 +16,7 @@
     "percentage": 0.81
   },
   "mixedNumbers": {
-    "total": 2080,
+    "total": 2081,
     "percentage": 98.81
   }
 }
