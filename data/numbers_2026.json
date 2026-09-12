@@ -2,20 +2,20 @@
   "average": 7,
   "distribution": [
     {
+      "number": 12,
+      "frequency": 13
+    },
+    {
       "number": 25,
       "frequency": 13
     },
     {
-      "number": 12,
+      "number": 4,
       "frequency": 12
     },
     {
       "number": 18,
       "frequency": 12
-    },
-    {
-      "number": 4,
-      "frequency": 11
     },
     {
       "number": 13,
@@ -38,6 +38,10 @@
       "frequency": 9
     },
     {
+      "number": 11,
+      "frequency": 9
+    },
+    {
       "number": 14,
       "frequency": 9
     },
@@ -47,10 +51,6 @@
     },
     {
       "number": 5,
-      "frequency": 8
-    },
-    {
-      "number": 11,
       "frequency": 8
     },
     {
@@ -78,6 +78,10 @@
       "frequency": 7
     },
     {
+      "number": 27,
+      "frequency": 7
+    },
+    {
       "number": 31,
       "frequency": 7
     },
@@ -90,11 +94,19 @@
       "frequency": 6
     },
     {
+      "number": 16,
+      "frequency": 6
+    },
+    {
       "number": 20,
       "frequency": 6
     },
     {
-      "number": 27,
+      "number": 24,
+      "frequency": 6
+    },
+    {
+      "number": 29,
       "frequency": 6
     },
     {
@@ -122,15 +134,7 @@
       "frequency": 6
     },
     {
-      "number": 16,
-      "frequency": 5
-    },
-    {
-      "number": 24,
-      "frequency": 5
-    },
-    {
-      "number": 29,
+      "number": 28,
       "frequency": 5
     },
     {
@@ -155,10 +159,6 @@
     },
     {
       "number": 10,
-      "frequency": 4
-    },
-    {
-      "number": 28,
       "frequency": 4
     }
   ]
