@@ -1,13 +1,13 @@
 {
-  "average": 493,
+  "average": 494,
   "distribution": [
     {
       "number": 6,
-      "frequency": 540
+      "frequency": 541
     },
     {
       "number": 16,
-      "frequency": 539
+      "frequency": 540
     },
     {
       "number": 9,
@@ -31,15 +31,15 @@
     },
     {
       "number": 12,
-      "frequency": 520
+      "frequency": 521
+    },
+    {
+      "number": 17,
+      "frequency": 519
     },
     {
       "number": 19,
       "frequency": 519
-    },
-    {
-      "number": 17,
-      "frequency": 518
     },
     {
       "number": 36,
@@ -63,7 +63,7 @@
     },
     {
       "number": 10,
-      "frequency": 507
+      "frequency": 508
     },
     {
       "number": 34,
@@ -138,12 +138,12 @@
       "frequency": 482
     },
     {
-      "number": 39,
+      "number": 31,
       "frequency": 481
     },
     {
-      "number": 31,
-      "frequency": 480
+      "number": 39,
+      "frequency": 481
     },
     {
       "number": 8,
@@ -155,11 +155,11 @@
     },
     {
       "number": 29,
-      "frequency": 460
+      "frequency": 461
     },
     {
       "number": 40,
-      "frequency": 108
+      "frequency": 109
     }
   ]
 }
