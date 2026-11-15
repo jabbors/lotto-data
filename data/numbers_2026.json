@@ -3,7 +3,7 @@
   "distribution": [
     {
       "number": 12,
-      "frequency": 15
+      "frequency": 16
     },
     {
       "number": 13,
@@ -22,6 +22,10 @@
       "frequency": 13
     },
     {
+      "number": 22,
+      "frequency": 13
+    },
+    {
       "number": 4,
       "frequency": 12
     },
@@ -31,10 +35,6 @@
     },
     {
       "number": 14,
-      "frequency": 12
-    },
-    {
-      "number": 22,
       "frequency": 12
     },
     {
@@ -62,7 +62,15 @@
       "frequency": 10
     },
     {
+      "number": 5,
+      "frequency": 9
+    },
+    {
       "number": 21,
+      "frequency": 9
+    },
+    {
+      "number": 26,
       "frequency": 9
     },
     {
@@ -70,11 +78,15 @@
       "frequency": 9
     },
     {
-      "number": 1,
-      "frequency": 8
+      "number": 32,
+      "frequency": 9
     },
     {
-      "number": 5,
+      "number": 37,
+      "frequency": 9
+    },
+    {
+      "number": 1,
       "frequency": 8
     },
     {
@@ -90,14 +102,6 @@
       "frequency": 8
     },
     {
-      "number": 26,
-      "frequency": 8
-    },
-    {
-      "number": 32,
-      "frequency": 8
-    },
-    {
       "number": 34,
       "frequency": 8
     },
@@ -106,7 +110,7 @@
       "frequency": 8
     },
     {
-      "number": 37,
+      "number": 38,
       "frequency": 8
     },
     {
@@ -126,11 +130,11 @@
       "frequency": 7
     },
     {
-      "number": 33,
+      "number": 28,
       "frequency": 7
     },
     {
-      "number": 38,
+      "number": 33,
       "frequency": 7
     },
     {
@@ -143,10 +147,6 @@
     },
     {
       "number": 10,
-      "frequency": 6
-    },
-    {
-      "number": 28,
       "frequency": 6
     },
     {
